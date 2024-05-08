@@ -1695,7 +1695,7 @@ if char then
  end
 end)
 gui.button("重进",function(args, speaker)
-	if game:GetService("Players") <= 1 then
+	if game:GetService("Players") then
 		plr:Kick("\nRejoining...")
 		wait()
 		TeleportService:Teleport(PlaceId, Players.LocalPlayer)
