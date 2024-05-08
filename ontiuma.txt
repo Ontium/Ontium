@@ -1694,7 +1694,7 @@ if char then
   end
  end
 end)
-gui.button("重进",function(args, speaker)
+gui.button("重进",function()
 	if #Players:GetPlayers() <= 1 then
 		Players.LocalPlayer:Kick("\nRejoining...")
 		wait()
